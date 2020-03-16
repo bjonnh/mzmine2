@@ -81,6 +81,8 @@ public final class MZmineCore {
 
     logger.info("Starting MZmine " + getMZmineVersion());
 
+    logger.info("Temporary directory is " + System.getProperty("java.io.tmpdir"));
+
     // Remove old temporary files, if we find any
     TmpFileCleanup.removeOldTemporaryFiles();
 
